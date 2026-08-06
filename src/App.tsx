@@ -52,7 +52,7 @@ export default function App() {
           <h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-zinc-500">
             {searchQuery 
               ? (language === 'pt' ? 'Resultados' : 'Results') 
-              : categories.find(c => c.id === activeCategory)?.name[language]}
+              : (categories.find(c => c.id === activeCategory)?.name[language] || '')}
           </h2>
         </div>
 

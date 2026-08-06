@@ -363,7 +363,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'caneca-sagres',
     name: 'Caneca Sagres',
-    description: { pt: '50cl', en: '50cl' },
+    description: { pt: '40cl', en: '40cl' },
     price: 2.5,
     category: 'beers',
   },

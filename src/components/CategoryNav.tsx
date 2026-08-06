@@ -15,6 +15,11 @@ export const CategoryNav = ({ categories, activeCategory, setActiveCategory, lan
   const containerRef = useRef<HTMLDivElement>(null);
   
   const activeCat = categories.find(c => c.id === activeCategory) || categories[0];
+  
+  if (!activeCat) {
+    return null;
+  }
+
   const ActiveIcon = (Icons as any)[activeCat.icon] || Icons.GlassWater;
 
   // Close dropdown when clicking outside
