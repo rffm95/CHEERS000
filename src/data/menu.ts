@@ -3,13 +3,13 @@ import { MenuItem, Category } from '../types';
 export const categories: Category[] = [
   { id: 'cocktails', name: { pt: 'Cocktails', en: 'Cocktails' }, icon: 'GlassWater' },
   { id: 'non-alcoholic-cocktails', name: { pt: 'Cocktails sem Álcool', en: 'Non-Alcoholic Cocktails' }, icon: 'Leaf' },
-  { id: 'bottles', name: { pt: 'Garrafas para Partilhar', en: 'Bottles to Share' }, icon: 'Wine' },
+  { id: 'bottles', name: { pt: 'Garrafas e Packs Para Partilhar', en: 'Bottles & Packs to Share' }, icon: 'Wine' },
   { id: 'gins', name: { pt: 'Gins', en: 'Gins' }, icon: 'Sparkles' },
   { id: 'whiskies', name: { pt: 'Whiskies', en: 'Whiskies' }, icon: 'Flame' },
   { id: 'beers', name: { pt: 'Cervejas & Sidras', en: 'Beers & Ciders' }, icon: 'Beer' },
   { id: 'wines', name: { pt: 'Vinhos e Espumantes', en: 'Wines & Sparkling' }, icon: 'Grape' },
   { id: 'sangrias', name: { pt: 'Sangrias', en: 'Sangrias' }, icon: 'GlassWater' },
-  { id: 'soft-drinks', name: { pt: 'Refrigerantes', en: 'Soft Drinks' }, icon: 'Coffee' },
+  { id: 'soft-drinks', name: { pt: 'Refrigerantes e Cafetaria', en: 'Soft Drinks & Cafe' }, icon: 'Coffee' },
   { id: 'snacks', name: { pt: 'Snacks', en: 'Snacks' }, icon: 'Utensils' },
 ];
 
@@ -26,6 +26,15 @@ export const menuItems: MenuItem[] = [
     badges: ['Classic'],
   },
   {
+    id: 'mojito-maracuja',
+    name: 'Mojito de Maracujá',
+    description: { pt: 'Variação tropical do clássico cubano.', en: 'Tropical variation of the Cuban classic.' },
+    ingredients: { pt: 'Rum, maracujá, hortelã, sumo de lima, açúcar, água com gás', en: 'Rum, passion fruit, mint, lime juice, sugar, sparkling water' },
+    price: 8,
+    category: 'cocktails',
+    badges: ['Tropical'],
+  },
+  {
     id: 'gin-maracuja',
     name: 'Gin Maracujá',
     description: { pt: 'Tropical e exótico.', en: 'Tropical and exotic.' },
@@ -33,6 +42,14 @@ export const menuItems: MenuItem[] = [
     price: 7,
     category: 'cocktails',
     badges: ['Top Seller'],
+  },
+  {
+    id: 'gin-morango',
+    name: 'Gin Morango',
+    description: { pt: 'Doce e refrescante com morangos frescos.', en: 'Sweet and refreshing with fresh strawberries.' },
+    ingredients: { pt: 'Gin, morango, sumo de lima, açúcar, água tónica', en: 'Gin, strawberry, lime juice, sugar, tonic water' },
+    price: 7,
+    category: 'cocktails',
   },
   {
     id: 'gin-tropical',
@@ -76,6 +93,46 @@ export const menuItems: MenuItem[] = [
     price: 8,
     category: 'cocktails',
     badges: ['House Special'],
+  },
+  {
+    id: 'basil-smash',
+    name: 'Basil Smash',
+    description: { pt: 'Frescura botânica com manjericão.', en: 'Botanical freshness with basil.' },
+    ingredients: { pt: 'Gin, sumo de lima, açúcar, clara de ovo e manjericão', en: 'Gin, lime juice, sugar, egg white and basil' },
+    price: 8,
+    category: 'cocktails',
+  },
+  {
+    id: 'ciroc-peach-sour',
+    name: 'Ciroc Peach Sour',
+    description: { pt: 'Suave e frutado.', en: 'Smooth and fruity.' },
+    ingredients: { pt: 'Ciroc pêssego, sumo de lima, açúcar, clara de ovo', en: 'Ciroc peach, lime juice, sugar, egg white' },
+    price: 9,
+    category: 'cocktails',
+  },
+  {
+    id: 'ciroc-raspberry-sour',
+    name: 'Ciroc Raspberry Sour',
+    description: { pt: 'Intenso e vibrante.', en: 'Intense and vibrant.' },
+    ingredients: { pt: 'Ciroc amora, sumo de lima, açúcar, clara de ovo', en: 'Ciroc raspberry, lime juice, sugar, egg white' },
+    price: 9,
+    category: 'cocktails',
+  },
+  {
+    id: 'ciroc-apple-sour',
+    name: 'Ciroc Apple Sour',
+    description: { pt: 'Crocante e refrescante.', en: 'Crisp and refreshing.' },
+    ingredients: { pt: 'Ciroc maçã, sumo de lima, açúcar, clara de ovo', en: 'Ciroc apple, lime juice, sugar, egg white' },
+    price: 9,
+    category: 'cocktails',
+  },
+  {
+    id: 'ciroc-pinnaple-sour',
+    name: 'Ciroc Pinnaple Sour',
+    description: { pt: 'Exótico e tropical.', en: 'Exotic and tropical.' },
+    ingredients: { pt: 'Ciroc ananás, sumo de lima, açúcar, clara de ovo', en: 'Ciroc pineapple, lime juice, sugar, egg white' },
+    price: 9,
+    category: 'cocktails',
   },
 
   // COCKTAILS SEM ÁLCOOL
@@ -335,6 +392,13 @@ export const menuItems: MenuItem[] = [
     category: 'whiskies',
     isHighlighted: true,
   },
+  {
+    id: 'balvenie-12',
+    name: 'The Balvenie 12',
+    description: { pt: 'Single Malt rico e meloso.', en: 'Rich and honeyed Single Malt.' },
+    price: 14,
+    category: 'whiskies',
+  },
 
   // BEERS
   {
@@ -389,6 +453,29 @@ export const menuItems: MenuItem[] = [
     price: 2.5,
     category: 'beers',
   },
+  {
+    id: 'guinness',
+    name: 'Guinness',
+    description: { pt: '44cl', en: '44cl' },
+    price: 5,
+    category: 'beers',
+    isHighlighted: true,
+  },
+  {
+    id: 'sagres-bohemia',
+    name: 'Sagres Bohemia',
+    description: { pt: '33cl', en: '33cl' },
+    price: 2,
+    category: 'beers',
+  },
+  {
+    id: 'heineken-zero',
+    name: 'Heineken 0.0%',
+    description: { pt: '25cl (sem álcool)', en: '25cl (alcohol free)' },
+    price: 2,
+    category: 'beers',
+    brand: 'heineken',
+  },
 
   // VINHOS E ESPUMANTES
   {
@@ -427,6 +514,82 @@ export const menuItems: MenuItem[] = [
     price: 25,
     category: 'wines',
   },
+  {
+    id: 'murganheira-espumante',
+    name: 'Murganheira',
+    description: { pt: 'Espumante de eleição.', en: 'Choice sparkling wine.' },
+    price: 25,
+    category: 'wines',
+    isHighlighted: true,
+    badges: ['Premium'],
+  },
+
+  // REFRIGERANTES E CAFETARIA
+  {
+    id: 'cafe',
+    name: 'Café',
+    description: { pt: 'Café expresso.', en: 'Espresso coffee.' },
+    price: 1,
+    category: 'soft-drinks',
+  },
+  {
+    id: 'descafeinado',
+    name: 'Descafeinado',
+    description: { pt: 'Café sem cafeína.', en: 'Decaf coffee.' },
+    price: 1,
+    category: 'soft-drinks',
+  },
+  {
+    id: 'agua-sem-gas',
+    name: 'Água sem Gás',
+    description: { pt: '50cl', en: '50cl' },
+    price: 1.5,
+    category: 'soft-drinks',
+  },
+  {
+    id: 'agua-gas-sem-sabor',
+    name: 'Água com Gás (Sem Sabor)',
+    description: { pt: '25cl', en: '25cl' },
+    price: 1.5,
+    category: 'soft-drinks',
+  },
+  {
+    id: 'agua-gas-com-sabor',
+    name: 'Água com Gás (Com Sabor)',
+    description: { pt: '25cl', en: '25cl' },
+    price: 2,
+    category: 'soft-drinks',
+  },
+  {
+    id: 'cha',
+    name: 'Chá',
+    description: { pt: 'Vários sabores.', en: 'Assorted flavors.' },
+    price: 2,
+    category: 'soft-drinks',
+  },
+  {
+    id: 'refrigerantes-gen',
+    name: 'Refrigerantes',
+    description: { pt: 'Lata 33cl / Garrafa.', en: '33cl Can / Bottle.' },
+    price: 2,
+    category: 'soft-drinks',
+  },
+  {
+    id: 'red-bull',
+    name: 'Red Bull',
+    description: { pt: 'Bebida energética.', en: 'Energy drink.' },
+    price: 3.5,
+    category: 'soft-drinks',
+    brand: 'red-bull',
+  },
+  {
+    id: 'pellegrino',
+    name: 'S. Pellegrino',
+    description: { pt: '50cl', en: '50cl' },
+    price: 5,
+    category: 'soft-drinks',
+    isHighlighted: true,
+  },
 
   // SANGRIAS
   {
@@ -464,7 +627,37 @@ export const menuItems: MenuItem[] = [
     isHighlighted: true,
   },
 
-  // BOTTLES (REMAINS BUT ADDING NEW ONES IF ANY)
+  // BOTTLES AND PACKS
+  {
+    id: 'regua-sagres',
+    name: '1 Régua Sagres (5 Finos)',
+    description: { pt: 'Ideal para partilhar com amigos.', en: 'Ideal for sharing with friends.' },
+    price: 6.5,
+    category: 'bottles',
+  },
+  {
+    id: 'regua-heineken',
+    name: '1 Régua Heineken (5 Finos)',
+    description: { pt: 'Ideal para partilhar com amigos.', en: 'Ideal for sharing with friends.' },
+    price: 7.5,
+    category: 'bottles',
+    brand: 'heineken',
+  },
+  {
+    id: 'pack-canecas-sagres',
+    name: '1 Pack Canecas Sagres (6 Canecas)',
+    description: { pt: 'Diversão garantida em grupo.', en: 'Guaranteed group fun.' },
+    price: 12.5,
+    category: 'bottles',
+  },
+  {
+    id: 'pack-canecas-heineken',
+    name: '1 Pack Canecas Heineken (6 Canecas)',
+    description: { pt: 'Diversão garantida em grupo.', en: 'Guaranteed group fun.' },
+    price: 15,
+    category: 'bottles',
+    brand: 'heineken',
+  },
   {
     id: 'bottle-moskovskaya',
     name: 'Moskovskaya + 6 Red Bull',

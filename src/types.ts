@@ -18,7 +18,7 @@ export interface MenuItem {
   category: string;
   badges?: string[]; // e.g., 'Best Seller', 'Premium', 'New'
   isHighlighted?: boolean;
-  brand?: 'heineken' | 'nordes' | 'jack-daniels' | 'other';
+  brand?: 'heineken' | 'nordes' | 'jack-daniels' | 'red-bull' | 'other';
 }
 
 export interface Category {
